@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/CoderJackyHuang/HYBControllerTransitions"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  s.screenshots  = "https://github.com/CoderJackyHuang/HYBControllerTransitions/blob/master/move.gif", "https://github.com/CoderJackyHuang/HYBControllerTransitions/blob/master/bubble.gif", "https://github.com/CoderJackyHuang/HYBControllerTransitions/blob/master/modal.gif"
   s.license      = "MIT (example)"
   s.author             = { "huangyibiao" => "" }
   s.social_media_url   = "http://henishuo.com"
