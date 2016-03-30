@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		690CA5BF1CABD22300E2F50B /* HYBBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 690CA5B61CABD22300E2F50B /* HYBBaseTransition.m */; };
+		690CA5C01CABD22300E2F50B /* HYBBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 690CA5B61CABD22300E2F50B /* HYBBaseTransition.m */; };
+		690CA5C11CABD22300E2F50B /* HYBBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 690CA5B81CABD22300E2F50B /* HYBBubbleTransition.m */; };
+		690CA5C21CABD22300E2F50B /* HYBBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 690CA5B81CABD22300E2F50B /* HYBBubbleTransition.m */; };
+		690CA5C31CABD22300E2F50B /* HYBModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 690CA5BA1CABD22300E2F50B /* HYBModalTransition.m */; };
+		690CA5C41CABD22300E2F50B /* HYBModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 690CA5BA1CABD22300E2F50B /* HYBModalTransition.m */; };
+		690CA5C51CABD22300E2F50B /* HYBMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 690CA5BC1CABD22300E2F50B /* HYBMoveTransition.m */; };
+		690CA5C61CABD22300E2F50B /* HYBMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 690CA5BC1CABD22300E2F50B /* HYBMoveTransition.m */; };
+		690CA5C71CABD22300E2F50B /* UIViewController+HYBMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 690CA5BE1CABD22300E2F50B /* UIViewController+HYBMoveTransition.m */; };
+		690CA5C81CABD22300E2F50B /* UIViewController+HYBMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 690CA5BE1CABD22300E2F50B /* UIViewController+HYBMoveTransition.m */; };
+		690FC9361CAB4AB30002E6A9 /* HYBModalBubbleTopRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9351CAB4AB30002E6A9 /* HYBModalBubbleTopRightViewController.m */; };
+		690FC9371CAB4AB30002E6A9 /* HYBModalBubbleTopRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9351CAB4AB30002E6A9 /* HYBModalBubbleTopRightViewController.m */; };
+		690FC93A1CAB68BC0002E6A9 /* HYBBubbleRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9391CAB68BC0002E6A9 /* HYBBubbleRightViewController.m */; };
+		690FC93B1CAB68BC0002E6A9 /* HYBBubbleRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9391CAB68BC0002E6A9 /* HYBBubbleRightViewController.m */; };
+		690FC9451CAB75B00002E6A9 /* HYBModalHalfController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9441CAB75B00002E6A9 /* HYBModalHalfController.m */; };
+		690FC9461CAB75B00002E6A9 /* HYBModalHalfController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9441CAB75B00002E6A9 /* HYBModalHalfController.m */; };
+		690FC9491CAB75C30002E6A9 /* HYBModalHalfDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9481CAB75C30002E6A9 /* HYBModalHalfDetailController.m */; };
+		690FC94A1CAB75C30002E6A9 /* HYBModalHalfDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9481CAB75C30002E6A9 /* HYBModalHalfDetailController.m */; };
+		690FC9581CAB76520002E6A9 /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC94C1CAB76520002E6A9 /* img1.jpg */; };
+		690FC9591CAB76520002E6A9 /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC94C1CAB76520002E6A9 /* img1.jpg */; };
+		690FC95A1CAB76520002E6A9 /* img10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC94D1CAB76520002E6A9 /* img10.jpg */; };
+		690FC95B1CAB76520002E6A9 /* img10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC94D1CAB76520002E6A9 /* img10.jpg */; };
+		690FC95C1CAB76520002E6A9 /* img11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC94E1CAB76520002E6A9 /* img11.jpg */; };
+		690FC95D1CAB76520002E6A9 /* img11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC94E1CAB76520002E6A9 /* img11.jpg */; };
+		690FC95E1CAB76520002E6A9 /* img12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC94F1CAB76520002E6A9 /* img12.jpg */; };
+		690FC95F1CAB76520002E6A9 /* img12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC94F1CAB76520002E6A9 /* img12.jpg */; };
+		690FC9601CAB76520002E6A9 /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9501CAB76520002E6A9 /* img2.jpg */; };
+		690FC9611CAB76520002E6A9 /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9501CAB76520002E6A9 /* img2.jpg */; };
+		690FC9621CAB76520002E6A9 /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9511CAB76520002E6A9 /* img3.jpg */; };
+		690FC9631CAB76520002E6A9 /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9511CAB76520002E6A9 /* img3.jpg */; };
+		690FC9641CAB76520002E6A9 /* img4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9521CAB76520002E6A9 /* img4.jpg */; };
+		690FC9651CAB76520002E6A9 /* img4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9521CAB76520002E6A9 /* img4.jpg */; };
+		690FC9661CAB76520002E6A9 /* img5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9531CAB76520002E6A9 /* img5.jpg */; };
+		690FC9671CAB76520002E6A9 /* img5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9531CAB76520002E6A9 /* img5.jpg */; };
+		690FC9681CAB76520002E6A9 /* img6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9541CAB76520002E6A9 /* img6.jpg */; };
+		690FC9691CAB76520002E6A9 /* img6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9541CAB76520002E6A9 /* img6.jpg */; };
+		690FC96A1CAB76520002E6A9 /* img7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9551CAB76520002E6A9 /* img7.jpg */; };
+		690FC96B1CAB76520002E6A9 /* img7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9551CAB76520002E6A9 /* img7.jpg */; };
+		690FC96C1CAB76520002E6A9 /* img8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9561CAB76520002E6A9 /* img8.jpg */; };
+		690FC96D1CAB76520002E6A9 /* img8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9561CAB76520002E6A9 /* img8.jpg */; };
+		690FC96E1CAB76520002E6A9 /* img9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9571CAB76520002E6A9 /* img9.jpg */; };
+		690FC96F1CAB76520002E6A9 /* img9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 690FC9571CAB76520002E6A9 /* img9.jpg */; };
+		690FC97E1CAB9A0E0002E6A9 /* HYBMoveDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC97D1CAB9A0E0002E6A9 /* HYBMoveDetailController.m */; };
+		690FC97F1CAB9A0E0002E6A9 /* HYBMoveDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC97D1CAB9A0E0002E6A9 /* HYBMoveDetailController.m */; };
+		690FC9861CAB9A630002E6A9 /* HYBGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9811CAB9A630002E6A9 /* HYBGridCell.m */; };
+		690FC9871CAB9A630002E6A9 /* HYBGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9811CAB9A630002E6A9 /* HYBGridCell.m */; };
+		690FC9881CAB9A630002E6A9 /* HYBGridModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9831CAB9A630002E6A9 /* HYBGridModel.m */; };
+		690FC9891CAB9A630002E6A9 /* HYBGridModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9831CAB9A630002E6A9 /* HYBGridModel.m */; };
+		690FC98A1CAB9A630002E6A9 /* HYBMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9851CAB9A630002E6A9 /* HYBMoveViewController.m */; };
+		690FC98B1CAB9A630002E6A9 /* HYBMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9851CAB9A630002E6A9 /* HYBMoveViewController.m */; };
+		69406D451CAAB6BF00479B8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406D441CAAB6BF00479B8A /* main.m */; };
+		69406D481CAAB6BF00479B8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406D471CAAB6BF00479B8A /* AppDelegate.m */; };
+		69406D4B1CAAB6BF00479B8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406D4A1CAAB6BF00479B8A /* ViewController.m */; };
+		69406D4E1CAAB6BF00479B8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69406D4C1CAAB6BF00479B8A /* Main.storyboard */; };
+		69406D501CAAB6BF00479B8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69406D4F1CAAB6BF00479B8A /* Assets.xcassets */; };
+		69406D531CAAB6BF00479B8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69406D511CAAB6BF00479B8A /* LaunchScreen.storyboard */; };
+		69406D5E1CAAB6BF00479B8A /* HYBTransitionAnimationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406D5D1CAAB6BF00479B8A /* HYBTransitionAnimationsTests.m */; };
+		69406D731CAAD38B00479B8A /* HYBModalBubbleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406D721CAAD38B00479B8A /* HYBModalBubbleViewController.m */; };
+		69406D741CAAD38B00479B8A /* HYBModalBubbleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406D721CAAD38B00479B8A /* HYBModalBubbleViewController.m */; };
+		69406D771CAAD49C00479B8A /* HYBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406D761CAAD49C00479B8A /* HYBBaseViewController.m */; };
+		69406D781CAAD49C00479B8A /* HYBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406D761CAAD49C00479B8A /* HYBBaseViewController.m */; };
+		69406D7D1CAAD55100479B8A /* HYBBubbleFromBottomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406D7C1CAAD55100479B8A /* HYBBubbleFromBottomController.m */; };
+		69406D7E1CAAD55100479B8A /* HYBBubbleFromBottomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406D7C1CAAD55100479B8A /* HYBBubbleFromBottomController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69406D5A1CAAB6BF00479B8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69406D381CAAB6BF00479B8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69406D3F1CAAB6BF00479B8A;
+			remoteInfo = HYBTransitionAnimations;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		690CA5B51CABD22300E2F50B /* HYBBaseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBaseTransition.h; sourceTree = "<group>"; };
+		690CA5B61CABD22300E2F50B /* HYBBaseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBBaseTransition.m; sourceTree = "<group>"; };
+		690CA5B71CABD22300E2F50B /* HYBBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBubbleTransition.h; sourceTree = "<group>"; };
+		690CA5B81CABD22300E2F50B /* HYBBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBBubbleTransition.m; sourceTree = "<group>"; };
+		690CA5B91CABD22300E2F50B /* HYBModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBModalTransition.h; sourceTree = "<group>"; };
+		690CA5BA1CABD22300E2F50B /* HYBModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBModalTransition.m; sourceTree = "<group>"; };
+		690CA5BB1CABD22300E2F50B /* HYBMoveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBMoveTransition.h; sourceTree = "<group>"; };
+		690CA5BC1CABD22300E2F50B /* HYBMoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBMoveTransition.m; sourceTree = "<group>"; };
+		690CA5BD1CABD22300E2F50B /* UIViewController+HYBMoveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HYBMoveTransition.h"; sourceTree = "<group>"; };
+		690CA5BE1CABD22300E2F50B /* UIViewController+HYBMoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HYBMoveTransition.m"; sourceTree = "<group>"; };
+		690FC9341CAB4AB30002E6A9 /* HYBModalBubbleTopRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBModalBubbleTopRightViewController.h; sourceTree = "<group>"; };
+		690FC9351CAB4AB30002E6A9 /* HYBModalBubbleTopRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBModalBubbleTopRightViewController.m; sourceTree = "<group>"; };
+		690FC9381CAB68BC0002E6A9 /* HYBBubbleRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBubbleRightViewController.h; sourceTree = "<group>"; };
+		690FC9391CAB68BC0002E6A9 /* HYBBubbleRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBBubbleRightViewController.m; sourceTree = "<group>"; };
+		690FC9431CAB75B00002E6A9 /* HYBModalHalfController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBModalHalfController.h; sourceTree = "<group>"; };
+		690FC9441CAB75B00002E6A9 /* HYBModalHalfController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBModalHalfController.m; sourceTree = "<group>"; };
+		690FC9471CAB75C30002E6A9 /* HYBModalHalfDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBModalHalfDetailController.h; sourceTree = "<group>"; };
+		690FC9481CAB75C30002E6A9 /* HYBModalHalfDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBModalHalfDetailController.m; sourceTree = "<group>"; };
+		690FC94C1CAB76520002E6A9 /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
+		690FC94D1CAB76520002E6A9 /* img10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img10.jpg; sourceTree = "<group>"; };
+		690FC94E1CAB76520002E6A9 /* img11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img11.jpg; sourceTree = "<group>"; };
+		690FC94F1CAB76520002E6A9 /* img12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img12.jpg; sourceTree = "<group>"; };
+		690FC9501CAB76520002E6A9 /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
+		690FC9511CAB76520002E6A9 /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
+		690FC9521CAB76520002E6A9 /* img4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img4.jpg; sourceTree = "<group>"; };
+		690FC9531CAB76520002E6A9 /* img5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img5.jpg; sourceTree = "<group>"; };
+		690FC9541CAB76520002E6A9 /* img6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img6.jpg; sourceTree = "<group>"; };
+		690FC9551CAB76520002E6A9 /* img7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img7.jpg; sourceTree = "<group>"; };
+		690FC9561CAB76520002E6A9 /* img8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img8.jpg; sourceTree = "<group>"; };
+		690FC9571CAB76520002E6A9 /* img9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img9.jpg; sourceTree = "<group>"; };
+		690FC97C1CAB9A0E0002E6A9 /* HYBMoveDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBMoveDetailController.h; sourceTree = "<group>"; };
+		690FC97D1CAB9A0E0002E6A9 /* HYBMoveDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBMoveDetailController.m; sourceTree = "<group>"; };
+		690FC9801CAB9A630002E6A9 /* HYBGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBGridCell.h; sourceTree = "<group>"; };
+		690FC9811CAB9A630002E6A9 /* HYBGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBGridCell.m; sourceTree = "<group>"; };
+		690FC9821CAB9A630002E6A9 /* HYBGridModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBGridModel.h; sourceTree = "<group>"; };
+		690FC9831CAB9A630002E6A9 /* HYBGridModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBGridModel.m; sourceTree = "<group>"; };
+		690FC9841CAB9A630002E6A9 /* HYBMoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBMoveViewController.h; sourceTree = "<group>"; };
+		690FC9851CAB9A630002E6A9 /* HYBMoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBMoveViewController.m; sourceTree = "<group>"; };
+		69406D401CAAB6BF00479B8A /* HYBTransitionAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYBTransitionAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69406D441CAAB6BF00479B8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69406D461CAAB6BF00479B8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		69406D471CAAB6BF00479B8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		69406D491CAAB6BF00479B8A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		69406D4A1CAAB6BF00479B8A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		69406D4D1CAAB6BF00479B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69406D4F1CAAB6BF00479B8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69406D521CAAB6BF00479B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69406D541CAAB6BF00479B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69406D591CAAB6BF00479B8A /* HYBTransitionAnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYBTransitionAnimationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69406D5D1CAAB6BF00479B8A /* HYBTransitionAnimationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYBTransitionAnimationsTests.m; sourceTree = "<group>"; };
+		69406D5F1CAAB6BF00479B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69406D711CAAD38B00479B8A /* HYBModalBubbleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBModalBubbleViewController.h; sourceTree = "<group>"; };
+		69406D721CAAD38B00479B8A /* HYBModalBubbleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBModalBubbleViewController.m; sourceTree = "<group>"; };
+		69406D751CAAD49C00479B8A /* HYBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBaseViewController.h; sourceTree = "<group>"; };
+		69406D761CAAD49C00479B8A /* HYBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBBaseViewController.m; sourceTree = "<group>"; };
+		69406D7B1CAAD55100479B8A /* HYBBubbleFromBottomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBubbleFromBottomController.h; sourceTree = "<group>"; };
+		69406D7C1CAAD55100479B8A /* HYBBubbleFromBottomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBBubbleFromBottomController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69406D3D1CAAB6BF00479B8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69406D561CAAB6BF00479B8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		690CA5B41CABD22300E2F50B /* HYBControllerTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				690CA5B51CABD22300E2F50B /* HYBBaseTransition.h */,
+				690CA5B61CABD22300E2F50B /* HYBBaseTransition.m */,
+				690CA5B71CABD22300E2F50B /* HYBBubbleTransition.h */,
+				690CA5B81CABD22300E2F50B /* HYBBubbleTransition.m */,
+				690CA5B91CABD22300E2F50B /* HYBModalTransition.h */,
+				690CA5BA1CABD22300E2F50B /* HYBModalTransition.m */,
+				690CA5BB1CABD22300E2F50B /* HYBMoveTransition.h */,
+				690CA5BC1CABD22300E2F50B /* HYBMoveTransition.m */,
+				690CA5BD1CABD22300E2F50B /* UIViewController+HYBMoveTransition.h */,
+				690CA5BE1CABD22300E2F50B /* UIViewController+HYBMoveTransition.m */,
+			);
+			path = HYBControllerTransitions;
+			sourceTree = "<group>";
+		};
+		690FC9421CAB758F0002E6A9 /* Demo3-modal */ = {
+			isa = PBXGroup;
+			children = (
+				690FC9431CAB75B00002E6A9 /* HYBModalHalfController.h */,
+				690FC9441CAB75B00002E6A9 /* HYBModalHalfController.m */,
+				690FC9471CAB75C30002E6A9 /* HYBModalHalfDetailController.h */,
+				690FC9481CAB75C30002E6A9 /* HYBModalHalfDetailController.m */,
+			);
+			name = "Demo3-modal";
+			sourceTree = "<group>";
+		};
+		690FC94B1CAB76520002E6A9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				690FC94C1CAB76520002E6A9 /* img1.jpg */,
+				690FC94D1CAB76520002E6A9 /* img10.jpg */,
+				690FC94E1CAB76520002E6A9 /* img11.jpg */,
+				690FC94F1CAB76520002E6A9 /* img12.jpg */,
+				690FC9501CAB76520002E6A9 /* img2.jpg */,
+				690FC9511CAB76520002E6A9 /* img3.jpg */,
+				690FC9521CAB76520002E6A9 /* img4.jpg */,
+				690FC9531CAB76520002E6A9 /* img5.jpg */,
+				690FC9541CAB76520002E6A9 /* img6.jpg */,
+				690FC9551CAB76520002E6A9 /* img7.jpg */,
+				690FC9561CAB76520002E6A9 /* img8.jpg */,
+				690FC9571CAB76520002E6A9 /* img9.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		690FC9771CAB99C60002E6A9 /* Demo4-Move-transition */ = {
+			isa = PBXGroup;
+			children = (
+				690FC9801CAB9A630002E6A9 /* HYBGridCell.h */,
+				690FC9811CAB9A630002E6A9 /* HYBGridCell.m */,
+				690FC9821CAB9A630002E6A9 /* HYBGridModel.h */,
+				690FC9831CAB9A630002E6A9 /* HYBGridModel.m */,
+				690FC9841CAB9A630002E6A9 /* HYBMoveViewController.h */,
+				690FC9851CAB9A630002E6A9 /* HYBMoveViewController.m */,
+				690FC97C1CAB9A0E0002E6A9 /* HYBMoveDetailController.h */,
+				690FC97D1CAB9A0E0002E6A9 /* HYBMoveDetailController.m */,
+			);
+			name = "Demo4-Move-transition";
+			sourceTree = "<group>";
+		};
+		69406D371CAAB6BF00479B8A = {
+			isa = PBXGroup;
+			children = (
+				690CA5B41CABD22300E2F50B /* HYBControllerTransitions */,
+				69406D421CAAB6BF00479B8A /* HYBTransitionAnimations */,
+				69406D5C1CAAB6BF00479B8A /* HYBTransitionAnimationsTests */,
+				69406D411CAAB6BF00479B8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69406D411CAAB6BF00479B8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69406D401CAAB6BF00479B8A /* HYBTransitionAnimations.app */,
+				69406D591CAAB6BF00479B8A /* HYBTransitionAnimationsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69406D421CAAB6BF00479B8A /* HYBTransitionAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				690FC9771CAB99C60002E6A9 /* Demo4-Move-transition */,
+				690FC9421CAB758F0002E6A9 /* Demo3-modal */,
+				69406D7F1CAADF1D00479B8A /* Demo2-bubble-topright */,
+				69406D791CAAD4AB00479B8A /* Demo1-bubble-bottom */,
+				69406D461CAAB6BF00479B8A /* AppDelegate.h */,
+				69406D471CAAB6BF00479B8A /* AppDelegate.m */,
+				69406D491CAAB6BF00479B8A /* ViewController.h */,
+				69406D4A1CAAB6BF00479B8A /* ViewController.m */,
+				69406D751CAAD49C00479B8A /* HYBBaseViewController.h */,
+				69406D761CAAD49C00479B8A /* HYBBaseViewController.m */,
+				69406D431CAAB6BF00479B8A /* Supporting Files */,
+			);
+			path = HYBTransitionAnimations;
+			sourceTree = "<group>";
+		};
+		69406D431CAAB6BF00479B8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				690FC94B1CAB76520002E6A9 /* images */,
+				69406D4F1CAAB6BF00479B8A /* Assets.xcassets */,
+				69406D4C1CAAB6BF00479B8A /* Main.storyboard */,
+				69406D511CAAB6BF00479B8A /* LaunchScreen.storyboard */,
+				69406D541CAAB6BF00479B8A /* Info.plist */,
+				69406D441CAAB6BF00479B8A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69406D5C1CAAB6BF00479B8A /* HYBTransitionAnimationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				69406D5D1CAAB6BF00479B8A /* HYBTransitionAnimationsTests.m */,
+				69406D5F1CAAB6BF00479B8A /* Info.plist */,
+			);
+			path = HYBTransitionAnimationsTests;
+			sourceTree = "<group>";
+		};
+		69406D791CAAD4AB00479B8A /* Demo1-bubble-bottom */ = {
+			isa = PBXGroup;
+			children = (
+				69406D711CAAD38B00479B8A /* HYBModalBubbleViewController.h */,
+				69406D721CAAD38B00479B8A /* HYBModalBubbleViewController.m */,
+				69406D7B1CAAD55100479B8A /* HYBBubbleFromBottomController.h */,
+				69406D7C1CAAD55100479B8A /* HYBBubbleFromBottomController.m */,
+			);
+			name = "Demo1-bubble-bottom";
+			sourceTree = "<group>";
+		};
+		69406D7F1CAADF1D00479B8A /* Demo2-bubble-topright */ = {
+			isa = PBXGroup;
+			children = (
+				690FC9341CAB4AB30002E6A9 /* HYBModalBubbleTopRightViewController.h */,
+				690FC9351CAB4AB30002E6A9 /* HYBModalBubbleTopRightViewController.m */,
+				690FC9381CAB68BC0002E6A9 /* HYBBubbleRightViewController.h */,
+				690FC9391CAB68BC0002E6A9 /* HYBBubbleRightViewController.m */,
+			);
+			name = "Demo2-bubble-topright";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69406D3F1CAAB6BF00479B8A /* HYBTransitionAnimations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69406D621CAAB6BF00479B8A /* Build configuration list for PBXNativeTarget "HYBTransitionAnimations" */;
+			buildPhases = (
+				69406D3C1CAAB6BF00479B8A /* Sources */,
+				69406D3D1CAAB6BF00479B8A /* Frameworks */,
+				69406D3E1CAAB6BF00479B8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HYBTransitionAnimations;
+			productName = HYBTransitionAnimations;
+			productReference = 69406D401CAAB6BF00479B8A /* HYBTransitionAnimations.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69406D581CAAB6BF00479B8A /* HYBTransitionAnimationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69406D651CAAB6BF00479B8A /* Build configuration list for PBXNativeTarget "HYBTransitionAnimationsTests" */;
+			buildPhases = (
+				69406D551CAAB6BF00479B8A /* Sources */,
+				69406D561CAAB6BF00479B8A /* Frameworks */,
+				69406D571CAAB6BF00479B8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69406D5B1CAAB6BF00479B8A /* PBXTargetDependency */,
+			);
+			name = HYBTransitionAnimationsTests;
+			productName = HYBTransitionAnimationsTests;
+			productReference = 69406D591CAAB6BF00479B8A /* HYBTransitionAnimationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69406D381CAAB6BF00479B8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = huangyibiao;
+				TargetAttributes = {
+					69406D3F1CAAB6BF00479B8A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					69406D581CAAB6BF00479B8A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 69406D3F1CAAB6BF00479B8A;
+					};
+				};
+			};
+			buildConfigurationList = 69406D3B1CAAB6BF00479B8A /* Build configuration list for PBXProject "HYBTransitionAnimations" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69406D371CAAB6BF00479B8A;
+			productRefGroup = 69406D411CAAB6BF00479B8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69406D3F1CAAB6BF00479B8A /* HYBTransitionAnimations */,
+				69406D581CAAB6BF00479B8A /* HYBTransitionAnimationsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69406D3E1CAAB6BF00479B8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690FC95E1CAB76520002E6A9 /* img12.jpg in Resources */,
+				690FC96E1CAB76520002E6A9 /* img9.jpg in Resources */,
+				690FC95A1CAB76520002E6A9 /* img10.jpg in Resources */,
+				690FC96C1CAB76520002E6A9 /* img8.jpg in Resources */,
+				69406D531CAAB6BF00479B8A /* LaunchScreen.storyboard in Resources */,
+				690FC9581CAB76520002E6A9 /* img1.jpg in Resources */,
+				690FC9621CAB76520002E6A9 /* img3.jpg in Resources */,
+				69406D501CAAB6BF00479B8A /* Assets.xcassets in Resources */,
+				690FC9641CAB76520002E6A9 /* img4.jpg in Resources */,
+				690FC96A1CAB76520002E6A9 /* img7.jpg in Resources */,
+				69406D4E1CAAB6BF00479B8A /* Main.storyboard in Resources */,
+				690FC9661CAB76520002E6A9 /* img5.jpg in Resources */,
+				690FC9601CAB76520002E6A9 /* img2.jpg in Resources */,
+				690FC9681CAB76520002E6A9 /* img6.jpg in Resources */,
+				690FC95C1CAB76520002E6A9 /* img11.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69406D571CAAB6BF00479B8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690FC9651CAB76520002E6A9 /* img4.jpg in Resources */,
+				690FC96F1CAB76520002E6A9 /* img9.jpg in Resources */,
+				690FC96B1CAB76520002E6A9 /* img7.jpg in Resources */,
+				690FC9671CAB76520002E6A9 /* img5.jpg in Resources */,
+				690FC95F1CAB76520002E6A9 /* img12.jpg in Resources */,
+				690FC9631CAB76520002E6A9 /* img3.jpg in Resources */,
+				690FC9691CAB76520002E6A9 /* img6.jpg in Resources */,
+				690FC9611CAB76520002E6A9 /* img2.jpg in Resources */,
+				690FC96D1CAB76520002E6A9 /* img8.jpg in Resources */,
+				690FC95B1CAB76520002E6A9 /* img10.jpg in Resources */,
+				690FC9591CAB76520002E6A9 /* img1.jpg in Resources */,
+				690FC95D1CAB76520002E6A9 /* img11.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69406D3C1CAAB6BF00479B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69406D731CAAD38B00479B8A /* HYBModalBubbleViewController.m in Sources */,
+				690FC9491CAB75C30002E6A9 /* HYBModalHalfDetailController.m in Sources */,
+				690FC9451CAB75B00002E6A9 /* HYBModalHalfController.m in Sources */,
+				69406D771CAAD49C00479B8A /* HYBBaseViewController.m in Sources */,
+				690FC97E1CAB9A0E0002E6A9 /* HYBMoveDetailController.m in Sources */,
+				690CA5C51CABD22300E2F50B /* HYBMoveTransition.m in Sources */,
+				690FC9881CAB9A630002E6A9 /* HYBGridModel.m in Sources */,
+				69406D4B1CAAB6BF00479B8A /* ViewController.m in Sources */,
+				690FC98A1CAB9A630002E6A9 /* HYBMoveViewController.m in Sources */,
+				690FC9361CAB4AB30002E6A9 /* HYBModalBubbleTopRightViewController.m in Sources */,
+				69406D481CAAB6BF00479B8A /* AppDelegate.m in Sources */,
+				690CA5C11CABD22300E2F50B /* HYBBubbleTransition.m in Sources */,
+				690CA5C71CABD22300E2F50B /* UIViewController+HYBMoveTransition.m in Sources */,
+				690FC93A1CAB68BC0002E6A9 /* HYBBubbleRightViewController.m in Sources */,
+				690FC9861CAB9A630002E6A9 /* HYBGridCell.m in Sources */,
+				690CA5C31CABD22300E2F50B /* HYBModalTransition.m in Sources */,
+				690CA5BF1CABD22300E2F50B /* HYBBaseTransition.m in Sources */,
+				69406D7D1CAAD55100479B8A /* HYBBubbleFromBottomController.m in Sources */,
+				69406D451CAAB6BF00479B8A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69406D551CAAB6BF00479B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690FC9461CAB75B00002E6A9 /* HYBModalHalfController.m in Sources */,
+				690FC9871CAB9A630002E6A9 /* HYBGridCell.m in Sources */,
+				690CA5C01CABD22300E2F50B /* HYBBaseTransition.m in Sources */,
+				690CA5C61CABD22300E2F50B /* HYBMoveTransition.m in Sources */,
+				69406D781CAAD49C00479B8A /* HYBBaseViewController.m in Sources */,
+				690FC9891CAB9A630002E6A9 /* HYBGridModel.m in Sources */,
+				69406D741CAAD38B00479B8A /* HYBModalBubbleViewController.m in Sources */,
+				690FC98B1CAB9A630002E6A9 /* HYBMoveViewController.m in Sources */,
+				690CA5C41CABD22300E2F50B /* HYBModalTransition.m in Sources */,
+				690FC94A1CAB75C30002E6A9 /* HYBModalHalfDetailController.m in Sources */,
+				69406D7E1CAAD55100479B8A /* HYBBubbleFromBottomController.m in Sources */,
+				690FC97F1CAB9A0E0002E6A9 /* HYBMoveDetailController.m in Sources */,
+				690FC9371CAB4AB30002E6A9 /* HYBModalBubbleTopRightViewController.m in Sources */,
+				690FC93B1CAB68BC0002E6A9 /* HYBBubbleRightViewController.m in Sources */,
+				690CA5C21CABD22300E2F50B /* HYBBubbleTransition.m in Sources */,
+				690CA5C81CABD22300E2F50B /* UIViewController+HYBMoveTransition.m in Sources */,
+				69406D5E1CAAB6BF00479B8A /* HYBTransitionAnimationsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69406D5B1CAAB6BF00479B8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69406D3F1CAAB6BF00479B8A /* HYBTransitionAnimations */;
+			targetProxy = 69406D5A1CAAB6BF00479B8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69406D4C1CAAB6BF00479B8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69406D4D1CAAB6BF00479B8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69406D511CAAB6BF00479B8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69406D521CAAB6BF00479B8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69406D601CAAB6BF00479B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		69406D611CAAB6BF00479B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69406D631CAAB6BF00479B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HYBTransitionAnimations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangyibiao.HYBTransitionAnimations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		69406D641CAAB6BF00479B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HYBTransitionAnimations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangyibiao.HYBTransitionAnimations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		69406D661CAAB6BF00479B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HYBTransitionAnimationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangyibiao.HYBTransitionAnimationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYBTransitionAnimations.app/HYBTransitionAnimations";
+			};
+			name = Debug;
+		};
+		69406D671CAAB6BF00479B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HYBTransitionAnimationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangyibiao.HYBTransitionAnimationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYBTransitionAnimations.app/HYBTransitionAnimations";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69406D3B1CAAB6BF00479B8A /* Build configuration list for PBXProject "HYBTransitionAnimations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69406D601CAAB6BF00479B8A /* Debug */,
+				69406D611CAAB6BF00479B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69406D621CAAB6BF00479B8A /* Build configuration list for PBXNativeTarget "HYBTransitionAnimations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69406D631CAAB6BF00479B8A /* Debug */,
+				69406D641CAAB6BF00479B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69406D651CAAB6BF00479B8A /* Build configuration list for PBXNativeTarget "HYBTransitionAnimationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69406D661CAAB6BF00479B8A /* Debug */,
+				69406D671CAAB6BF00479B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69406D381CAAB6BF00479B8A /* Project object */;
+}
