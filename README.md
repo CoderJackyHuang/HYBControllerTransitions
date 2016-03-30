@@ -5,7 +5,7 @@
 
 #English Document  |  [中文文档](http://www.henishuo.com/transition-chinese-document/)
 
-A helpful and very useful library for controller custom transition.
+A very helpful and an very useful library for controller custom transition.
 
 This is an open source library for developers to use custom transition,   
 including push, pop, present and dismiss. In the library, now has supported  
@@ -14,9 +14,46 @@ library is, that developers only need to call an API, without others, to support
 custom transition. For more information, just see the document in detail  
 or just download the demo project to have a look.
 
+#Goal
+
+I design this library with a goal that any developer can use it directly without any knowledge   
+about custom transition. For this, I try to make it as easy as it can. Almost all properties  
+have default value, and just an API to call it out.
+
 Though Developers have no foudation of custom transition, they can use it directly.
 All custom transition protocols have been wraped in the base transtion, you still can use
 it to add special effect. for this, just inherit from the HYBBaseTransition class.
+
+#Support Spring Animation
+
+If you want to transition with Spring Animation, you can try this.
+
+```
+/**
+ *	Default is NO, if set to YES, it will be presented and dismissed with
+ *  spring animation.
+ */
+@property (nonatomic, assign) BOOL animatedWithSpring;
+```
+
+You can specify damp, initialSpringVerlocity, they have default values.
+
+```
+/**
+ * The initial Spring velocity, Only when animatedWithSpring is YES, it will take effect.
+ * Default is 1.0 / 0.5. If you don't know, just use the default value.
+ */
+@property (nonatomic, assign) CGFloat initialSpringVelocity;
+
+/**
+ *	The Spring damp, Only when animatedWithSpring is YES, it will take effect.
+ *
+ *  Default is 0.5. If you don't know, just use the default value.
+ */
+@property (nonatomic, assign) CGFloat damp;
+```
+
+
 
 #Buble Effect Transition
 
@@ -113,9 +150,36 @@ It is easy to use just like bubble effect transition. Only use an API to finish 
   [self presentViewController:vc animated:YES completion:NULL];
 }
 ```
+
 For example, AController has an event onPresent, when it is clicked, it will be invoked.   
 Now, AController needs to present BController, just use the code like above. In BController,  
 you don't need to do anything. It is easy?
+
+##Snapshot support navigation bar or not
+
+When the presenting view controller has navigation bar, you should set it to YES, and default is YES.
+
+```
+/**
+ *  Whether to include navigation bar when take scapshots.
+ *	Default is YES. If NO, it has only the presenting view.
+ */
+@property (nonatomic, assign) BOOL scapshotIncludingNavigationBar;
+```
+
+##Support tap to dismiss automatically
+
+If you don't want it to dismiss automatically, just set it to NO.  
+The default value is YES.
+
+```
+/**
+ *	When tap on the presenting view, should it automatically is dismissed.
+ *
+ *  Default is YES.
+ */
+@property (nonatomic, assign) BOOL shouldDismissOnTap;
+```
 
 For more information, you should see the properties provided, almost every property has default value.  
 So at many times, you don't need to worry about how to use.
