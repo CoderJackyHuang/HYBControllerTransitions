@@ -70,7 +70,7 @@ static NSString *cellIdentifier = @"gridcellidentifier";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
   HYBGridCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier
-                                                                         forIndexPath:indexPath];
+                                                                forIndexPath:indexPath];
   HYBGridModel *model = self.datasource[indexPath.item];
   [cell configCellWithModel:model];
   
@@ -82,8 +82,8 @@ static NSString *cellIdentifier = @"gridcellidentifier";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    HYBMoveDetailController *vc = [[HYBMoveDetailController alloc] init];
-   HYBGridModel *model = self.datasource[indexPath.item];
+  HYBMoveDetailController *vc = [[HYBMoveDetailController alloc] init];
+  HYBGridModel *model = self.datasource[indexPath.item];
   vc.image = model.clipedImage;
   
   self.transition = [[HYBMoveTransition alloc] initWithPushed:^(UIViewController *fromVC, UIViewController *toVC, HYBBaseTransition *transition) {
@@ -96,7 +96,6 @@ static NSString *cellIdentifier = @"gridcellidentifier";
     // Do nothing, unless you really need to.
   }];
   
-
   self.navigationController.delegate = self.transition;
   [self.navigationController pushViewController:vc animated:YES];
 }
