@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/CoderJackyHuang/HYBControllerTransitions"
-  s.screenshots  = "https://github.com/CoderJackyHuang/HYBControllerTransitions/blob/master/move.gif", "https://github.com/CoderJackyHuang/HYBControllerTransitions/blob/master/bubble.gif", "https://github.com/CoderJackyHuang/HYBControllerTransitions/blob/master/modal.gif"
-  s.license      = "MIT (example)"
+  s.screenshots  = "http://www.henishuo.com/wp-content/uploads/2016/03/bubble.gif", "http://www.henishuo.com/wp-content/uploads/2016/03/modal.gif", "http://www.henishuo.com/wp-content/uploads/2016/03/move.gif"
+  s.license      = "MIT"
   s.author             = { "huangyibiao" => "" }
   s.social_media_url   = "http://henishuo.com"
   s.platform     = :ios, "7.0"

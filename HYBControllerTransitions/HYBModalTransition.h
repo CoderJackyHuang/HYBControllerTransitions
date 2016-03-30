@@ -9,7 +9,12 @@
 #import "HYBBaseTransition.h"
 
 /**
- *	@author huangyibiao
+ * GITHUB           : https://github.com/CoderJackyHuang/HYBControllerTransitions
+ * Chinese Document : http://www.henishuo.com/transition-chinese-document/
+ * Author Blog      : http://www.henishuo.com/
+ * Email            : huangyibiao520@163.com
+ *
+ * Please give me a feed back when there is something wrong, or you need a special effec.
  *
  *	Modal transition animation, it will show usually half for the 
  *  destination view controller's view, and scale the from view.

@@ -8,11 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-/**
- *	@author huangyibiao
+
+ /**
+ * GITHUB           : https://github.com/CoderJackyHuang/HYBControllerTransitions
+ * Chinese Document : http://www.henishuo.com/transition-chinese-document/
+ * Author Blog      : http://www.henishuo.com/
+ * Email            : huangyibiao520@163.com
  *
- *	A category of UIViewController, for setting a target view,
- *  so that it can handle to transition to which view.
+ * Please give me a feed back when there is something wrong, or you need a special effec.
+ *
+ * A category of UIViewController, for setting a target view,
+ * so that it can handle to transition to which view.
  */
 @interface UIViewController (HYBMoveTransition)
 

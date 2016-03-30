@@ -9,8 +9,14 @@
 #import "HYBBaseTransition.h"
 #import "UIViewController+HYBMoveTransition.h"
 
+
 /**
- *	@author huangyibiao
+ * GITHUB           : https://github.com/CoderJackyHuang/HYBControllerTransitions
+ * Chinese Document : http://www.henishuo.com/transition-chinese-document/
+ * Author Blog      : http://www.henishuo.com/
+ * Email            : huangyibiao520@163.com
+ *
+ * Please give me a feed back when there is something wrong, or you need a special effec.
  *
  *	The move transition animation, it looks like the transition animation
  *  of KeyNote move transition.
