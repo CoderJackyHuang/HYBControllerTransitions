@@ -2,7 +2,8 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderJackyHuang/HYBControllerTransitions/blob/master/logo.png" style="text-align: center; margin: 0 auto;">
 
-#Summary
+
+#English Document  |  [中文文档](http://www.henishuo.com/transition-chinese-document/)
 
 A helpful and very useful library for controller custom transition.
 
@@ -125,9 +126,53 @@ It only supports push and pop mode.
 
 ![image](https://github.com/CoderJackyHuang/HYBControllerTransitions/blob/master/move.gif)
 
-#Note
+For the custom push/pop transition animation, it is much harder than present/dismiss. The reason it that,   
+when a controller was pushed, at this time, we just call init method, but the target view to transition  
+is nil, so I have to try to solve this problem.
 
-Later will add document!
+Now, I use a UIController category to solve it. In the pushed view controller, just set a target view like this:
+
+```
+// You must specify a target view with this.
+self.hyb_toTargetView = imgView;
+```
+
+Now we use just like this:
+
+```
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+  HYBMoveDetailController *vc = [[HYBMoveDetailController alloc] init];
+  HYBGridModel *model = self.datasource[indexPath.item];
+  vc.image = model.clipedImage;
+  
+  self.transition = [[HYBMoveTransition alloc] initWithPushed:^(UIViewController *fromVC, UIViewController *toVC, HYBBaseTransition *transition) {
+    HYBMoveTransition *move = (HYBMoveTransition *)transition;
+    HYBGridCell *cell = (HYBGridCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    move.targetClickedView = cell.imageView;
+    
+    move.animatedWithSpring = YES;
+  } poped:^(UIViewController *fromVC, UIViewController *toVC, HYBBaseTransition *transition) {
+    // Do nothing, unless you really need to.
+  }];
+  
+  self.navigationController.delegate = self.transition;
+  [self.navigationController pushViewController:vc animated:YES];
+}
+```
+
+Here the example is that, when select a cell, transition from the cell's imageview to the target view (hyb_toTargetView).
+
+Ok, until now, do you think it is really easy? I believe so!
+
+#Thanks
+
+Thanks to [andreamazz](https://github.com/andreamazz), I learn a lot from him.
+
+#Contact
+
+* GITHUB           : https://github.com/CoderJackyHuang/
+* Author Blog      : http://www.henishuo.com/
+* Email            : huangyibiao520@163.com
 
 #MIT LICENSE
 
