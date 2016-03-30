@@ -14,6 +14,10 @@ library is, that developers only need to call an API, without others, to support
 custom transition. For more information, just see the document in detail  
 or just download the demo project to have a look.
 
+Though Developers have no foudation of custom transition, they can use it directly.
+All custom transition protocols have been wraped in the base transtion, you still can use
+it to add special effect. for this, just inherit from the HYBBaseTransition class.
+
 #Buble Effect Transition
 
 A custom modal transition that presents and dismiss a controller with an expanding bubble effect.  
