@@ -15,8 +15,8 @@ or just download the demo project to have a look.
 
 #Buble Effect Transition
 
-A custom modal transition that presents and dismiss a controller with an expanding bubble effect.
-
+A custom modal transition that presents and dismiss a controller with an expanding bubble effect.  
+The bubble transition only supports present and dismiis mode.
 
 ![image](https://github.com/CoderJackyHuang/HYBControllerTransitions/blob/master/bubble.gif)
 
@@ -36,10 +36,10 @@ It's easy to use, just in the presenting controller callback event to add custom
    
     // If you want to use Spring animation, set to YES.
     // Default is NO.
-//    bubble.animatedWithSpring = YES;
+    //    bubble.animatedWithSpring = YES;
     bubble.bubbleColor = presented.view.backgroundColor;
     
-    // 由于一个控制器有导航，一个没有，导致会有64的误差，所以要记得处理这种情况
+    // If one have a navigation bar but another not, you should handle the difference by yourself.
     CGPoint center = [self.view viewWithTag:1010].center;
     center.y += 64;
     
@@ -58,14 +58,70 @@ It's easy to use, just in the presenting controller callback event to add custom
 ```
 
 For example, AController has an event onPresent, when it is clicked, it will be invoked.   
-Now, AController need to present BController, just use the code like above. In BController,  
+Now, AController needs to present BController, just use the code like above. In BController,  
 you don't need to do anything. It is easy?
+
+For more information, you should see the properties provided, almost every property has default value.  
+So at many times, you don't need to worry about how to use.
 
 #Modal Effect Transition
 
+Modal transition animation, it will show usually half for the destination view controller's view,  
+and scale the from view.
+
+It only supports present and dismiss mode.
+
 ![image](https://github.com/CoderJackyHuang/HYBControllerTransitions/blob/master/modal.gif)
 
+It is easy to use just like bubble effect transition. Only use an API to finish your job. It looks like below:  
+
+```
+- (void)onPresent {
+  HYBBubbleFromBottomController *vc = [[HYBBubbleFromBottomController alloc] init];
+  vc.modalPresentationStyle = UIModalPresentationCustom;
+  
+  // Remember to own it strongly
+  // Because delegate is weak reference, and it will be released after out of the function body.
+  self.bubbleTransition = [[HYBBubbleTransition alloc] initWithPresented:^(UIViewController *presented, UIViewController *presenting, UIViewController *source, HYBBaseTransition *transition) {
+    // You need to cast type to the real subclass type.
+    HYBBubbleTransition *bubble = (HYBBubbleTransition *)transition;
+   
+    // If you want to use Spring animation, set to YES.
+    // Default is NO.
+    //    bubble.animatedWithSpring = YES;
+    bubble.bubbleColor = presented.view.backgroundColor;
+    
+    // If one have a navigation bar but another not, you should handle the difference by yourself.
+    CGPoint center = [self.view viewWithTag:1010].center;
+    center.y += 64;
+    
+    bubble.bubbleStartPoint = center;
+  } dismissed:^(UIViewController *dismissed, HYBBaseTransition *transition) {
+    // Do nothing and it is ok here.
+    // If you really want to do something, here you can set the mode.
+    // But inside the super class, it is set to be automally.
+    // So you do this has no meaning.
+    transition.transitionMode = kHYBTransitionDismiss;
+  }];
+  vc.transitioningDelegate = self.bubbleTransition;
+  
+  [self presentViewController:vc animated:YES completion:NULL];
+}
+```
+For example, AController has an event onPresent, when it is clicked, it will be invoked.   
+Now, AController needs to present BController, just use the code like above. In BController,  
+you don't need to do anything. It is easy?
+
+For more information, you should see the properties provided, almost every property has default value.  
+So at many times, you don't need to worry about how to use.
+
 #Move Push/Pop Transition
+
+The move transition animation, it looks like the transition animation of KeyNote move transition.  
+When click a cell or a subview, then push to a view controller and you need  animation from the   
+clicked view to the destination controller.  
+
+It only supports push and pop mode.
 
 ![image](https://github.com/CoderJackyHuang/HYBControllerTransitions/blob/master/move.gif)
 
