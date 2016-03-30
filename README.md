@@ -232,6 +232,17 @@ Here the example is that, when select a cell, transition from the cell's imagevi
 
 Ok, until now, do you think it is really easy? I believe so!
 
+#How to install
+
+If your project supports Pod, just add the following code to you Podfile:
+
+```
+pod 'HYBControllerTransitions', '~> 1.0.0'
+```
+
+Otherwise, just add the source code HYBControllerTransitions folder to your project.
+
+
 #Thanks
 
 Thanks to [andreamazz](https://github.com/andreamazz), I learn a lot from him.
