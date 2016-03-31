@@ -31,8 +31,6 @@
 @property (nonatomic, assign) CGPoint scale;
 
 /**
- *	@author huangyibiao
- *
  *	The height for destination view to present.
  *  
  *  Default is half of destination view, it means desView.frame.size.height / 2
@@ -40,14 +38,12 @@
 @property (nonatomic, assign) CGFloat presentedHeight;
 
 /**
- *  Whether to include navigation bar when take scapshots.
+ *  Whether to include navigation bar when take snapshots.
  *	Default is YES. If NO, it has only the presenting view.
  */
 @property (nonatomic, assign) BOOL scapshotIncludingNavigationBar;
 
 /**
- *	@author huangyibiao
- *
  *	When tap on the presenting view, should it automatically is dismissed.
  *
  *  Default is YES.

@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author             = { "huangyibiao" => "" }
   s.social_media_url   = "http://henishuo.com"
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "http://github.com/CoderJackyHuang/HYBControllerTransitions.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/CoderJackyHuang/HYBControllerTransitions.git", :tag => "#{s.version}" }
   s.source_files  = "HYBControllerTransitions", "*.{h,m}"
 
 end
