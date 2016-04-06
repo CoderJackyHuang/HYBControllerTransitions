@@ -57,6 +57,12 @@
 		690FC9891CAB9A630002E6A9 /* HYBGridModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9831CAB9A630002E6A9 /* HYBGridModel.m */; };
 		690FC98A1CAB9A630002E6A9 /* HYBMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9851CAB9A630002E6A9 /* HYBMoveViewController.m */; };
 		690FC98B1CAB9A630002E6A9 /* HYBMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690FC9851CAB9A630002E6A9 /* HYBMoveViewController.m */; };
+		6929D40C1CB4B2CD0012A2CF /* HYBEaseInOutTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6929D40B1CB4B2CD0012A2CF /* HYBEaseInOutTransition.m */; };
+		6929D40D1CB4B2CD0012A2CF /* HYBEaseInOutTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6929D40B1CB4B2CD0012A2CF /* HYBEaseInOutTransition.m */; };
+		6929D4111CB4B4B30012A2CF /* HYBEaseInOutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6929D4101CB4B4B30012A2CF /* HYBEaseInOutController.m */; };
+		6929D4121CB4B4B30012A2CF /* HYBEaseInOutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6929D4101CB4B4B30012A2CF /* HYBEaseInOutController.m */; };
+		6929D4151CB4B4C50012A2CF /* HYBEaseInOutDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6929D4141CB4B4C50012A2CF /* HYBEaseInOutDetailController.m */; };
+		6929D4161CB4B4C50012A2CF /* HYBEaseInOutDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6929D4141CB4B4C50012A2CF /* HYBEaseInOutDetailController.m */; };
 		69406D451CAAB6BF00479B8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406D441CAAB6BF00479B8A /* main.m */; };
 		69406D481CAAB6BF00479B8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406D471CAAB6BF00479B8A /* AppDelegate.m */; };
 		69406D4B1CAAB6BF00479B8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406D4A1CAAB6BF00479B8A /* ViewController.m */; };
@@ -121,6 +127,12 @@
 		690FC9831CAB9A630002E6A9 /* HYBGridModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBGridModel.m; sourceTree = "<group>"; };
 		690FC9841CAB9A630002E6A9 /* HYBMoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBMoveViewController.h; sourceTree = "<group>"; };
 		690FC9851CAB9A630002E6A9 /* HYBMoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBMoveViewController.m; sourceTree = "<group>"; };
+		6929D40A1CB4B2CD0012A2CF /* HYBEaseInOutTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBEaseInOutTransition.h; sourceTree = "<group>"; };
+		6929D40B1CB4B2CD0012A2CF /* HYBEaseInOutTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBEaseInOutTransition.m; sourceTree = "<group>"; };
+		6929D40F1CB4B4B30012A2CF /* HYBEaseInOutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBEaseInOutController.h; sourceTree = "<group>"; };
+		6929D4101CB4B4B30012A2CF /* HYBEaseInOutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBEaseInOutController.m; sourceTree = "<group>"; };
+		6929D4131CB4B4C50012A2CF /* HYBEaseInOutDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBEaseInOutDetailController.h; sourceTree = "<group>"; };
+		6929D4141CB4B4C50012A2CF /* HYBEaseInOutDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBEaseInOutDetailController.m; sourceTree = "<group>"; };
 		69406D401CAAB6BF00479B8A /* HYBTransitionAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYBTransitionAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69406D441CAAB6BF00479B8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69406D461CAAB6BF00479B8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -165,14 +177,9 @@
 			children = (
 				690CA5B51CABD22300E2F50B /* HYBBaseTransition.h */,
 				690CA5B61CABD22300E2F50B /* HYBBaseTransition.m */,
-				690CA5B71CABD22300E2F50B /* HYBBubbleTransition.h */,
-				690CA5B81CABD22300E2F50B /* HYBBubbleTransition.m */,
-				690CA5B91CABD22300E2F50B /* HYBModalTransition.h */,
-				690CA5BA1CABD22300E2F50B /* HYBModalTransition.m */,
-				690CA5BB1CABD22300E2F50B /* HYBMoveTransition.h */,
-				690CA5BC1CABD22300E2F50B /* HYBMoveTransition.m */,
-				690CA5BD1CABD22300E2F50B /* UIViewController+HYBMoveTransition.h */,
-				690CA5BE1CABD22300E2F50B /* UIViewController+HYBMoveTransition.m */,
+				69204B5E1CB5064B0076D76F /* Push&Pop&Present&Dismiss */,
+				6929D4041CB4B2700012A2CF /* Present&Dismiss */,
+				6929D4051CB4B2860012A2CF /* Push&Pop */,
 			);
 			path = HYBControllerTransitions;
 			sourceTree = "<group>";
@@ -222,6 +229,80 @@
 			name = "Demo4-Move-transition";
 			sourceTree = "<group>";
 		};
+		69204B5E1CB5064B0076D76F /* Push&Pop&Present&Dismiss */ = {
+			isa = PBXGroup;
+			children = (
+				6929D4091CB4B2A80012A2CF /* EaseInout */,
+			);
+			name = "Push&Pop&Present&Dismiss";
+			sourceTree = "<group>";
+		};
+		6929D4041CB4B2700012A2CF /* Present&Dismiss */ = {
+			isa = PBXGroup;
+			children = (
+				6929D4071CB4B29B0012A2CF /* Bubble */,
+				6929D4081CB4B2A10012A2CF /* Modal */,
+			);
+			name = "Present&Dismiss";
+			sourceTree = "<group>";
+		};
+		6929D4051CB4B2860012A2CF /* Push&Pop */ = {
+			isa = PBXGroup;
+			children = (
+				6929D4061CB4B2940012A2CF /* Move */,
+			);
+			name = "Push&Pop";
+			sourceTree = "<group>";
+		};
+		6929D4061CB4B2940012A2CF /* Move */ = {
+			isa = PBXGroup;
+			children = (
+				690CA5BC1CABD22300E2F50B /* HYBMoveTransition.m */,
+				690CA5BB1CABD22300E2F50B /* HYBMoveTransition.h */,
+				690CA5BD1CABD22300E2F50B /* UIViewController+HYBMoveTransition.h */,
+				690CA5BE1CABD22300E2F50B /* UIViewController+HYBMoveTransition.m */,
+			);
+			name = Move;
+			sourceTree = "<group>";
+		};
+		6929D4071CB4B29B0012A2CF /* Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				690CA5B71CABD22300E2F50B /* HYBBubbleTransition.h */,
+				690CA5B81CABD22300E2F50B /* HYBBubbleTransition.m */,
+			);
+			name = Bubble;
+			sourceTree = "<group>";
+		};
+		6929D4081CB4B2A10012A2CF /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				690CA5B91CABD22300E2F50B /* HYBModalTransition.h */,
+				690CA5BA1CABD22300E2F50B /* HYBModalTransition.m */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		6929D4091CB4B2A80012A2CF /* EaseInout */ = {
+			isa = PBXGroup;
+			children = (
+				6929D40A1CB4B2CD0012A2CF /* HYBEaseInOutTransition.h */,
+				6929D40B1CB4B2CD0012A2CF /* HYBEaseInOutTransition.m */,
+			);
+			name = EaseInout;
+			sourceTree = "<group>";
+		};
+		6929D40E1CB4B4860012A2CF /* Demo5-EaseInOutTransition */ = {
+			isa = PBXGroup;
+			children = (
+				6929D40F1CB4B4B30012A2CF /* HYBEaseInOutController.h */,
+				6929D4101CB4B4B30012A2CF /* HYBEaseInOutController.m */,
+				6929D4131CB4B4C50012A2CF /* HYBEaseInOutDetailController.h */,
+				6929D4141CB4B4C50012A2CF /* HYBEaseInOutDetailController.m */,
+			);
+			name = "Demo5-EaseInOutTransition";
+			sourceTree = "<group>";
+		};
 		69406D371CAAB6BF00479B8A = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +325,7 @@
 		69406D421CAAB6BF00479B8A /* HYBTransitionAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				6929D40E1CB4B4860012A2CF /* Demo5-EaseInOutTransition */,
 				690FC9771CAB99C60002E6A9 /* Demo4-Move-transition */,
 				690FC9421CAB758F0002E6A9 /* Demo3-modal */,
 				69406D7F1CAADF1D00479B8A /* Demo2-bubble-topright */,
@@ -436,15 +518,18 @@
 				690FC9881CAB9A630002E6A9 /* HYBGridModel.m in Sources */,
 				69406D4B1CAAB6BF00479B8A /* ViewController.m in Sources */,
 				690FC98A1CAB9A630002E6A9 /* HYBMoveViewController.m in Sources */,
+				6929D4111CB4B4B30012A2CF /* HYBEaseInOutController.m in Sources */,
 				690FC9361CAB4AB30002E6A9 /* HYBModalBubbleTopRightViewController.m in Sources */,
 				69406D481CAAB6BF00479B8A /* AppDelegate.m in Sources */,
 				690CA5C11CABD22300E2F50B /* HYBBubbleTransition.m in Sources */,
 				690CA5C71CABD22300E2F50B /* UIViewController+HYBMoveTransition.m in Sources */,
 				690FC93A1CAB68BC0002E6A9 /* HYBBubbleRightViewController.m in Sources */,
 				690FC9861CAB9A630002E6A9 /* HYBGridCell.m in Sources */,
+				6929D4151CB4B4C50012A2CF /* HYBEaseInOutDetailController.m in Sources */,
 				690CA5C31CABD22300E2F50B /* HYBModalTransition.m in Sources */,
 				690CA5BF1CABD22300E2F50B /* HYBBaseTransition.m in Sources */,
 				69406D7D1CAAD55100479B8A /* HYBBubbleFromBottomController.m in Sources */,
+				6929D40C1CB4B2CD0012A2CF /* HYBEaseInOutTransition.m in Sources */,
 				69406D451CAAB6BF00479B8A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,8 +550,11 @@
 				690FC94A1CAB75C30002E6A9 /* HYBModalHalfDetailController.m in Sources */,
 				69406D7E1CAAD55100479B8A /* HYBBubbleFromBottomController.m in Sources */,
 				690FC97F1CAB9A0E0002E6A9 /* HYBMoveDetailController.m in Sources */,
+				6929D40D1CB4B2CD0012A2CF /* HYBEaseInOutTransition.m in Sources */,
+				6929D4121CB4B4B30012A2CF /* HYBEaseInOutController.m in Sources */,
 				690FC9371CAB4AB30002E6A9 /* HYBModalBubbleTopRightViewController.m in Sources */,
 				690FC93B1CAB68BC0002E6A9 /* HYBBubbleRightViewController.m in Sources */,
+				6929D4161CB4B4C50012A2CF /* HYBEaseInOutDetailController.m in Sources */,
 				690CA5C21CABD22300E2F50B /* HYBBubbleTransition.m in Sources */,
 				690CA5C81CABD22300E2F50B /* UIViewController+HYBMoveTransition.m in Sources */,
 				69406D5E1CAAB6BF00479B8A /* HYBTransitionAnimationsTests.m in Sources */,

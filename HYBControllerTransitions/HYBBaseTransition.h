@@ -181,4 +181,7 @@ UINavigationControllerDelegate // For push and pop transition
 - (instancetype)initWithPushed:(HYBTransitionPush)pushCallback
                          poped:(HYBTransitionPop)popCallback;
 
+- (UIView *)toView:(id<UIViewControllerContextTransitioning>)transitionContext ;
+- (UIView *)fromView:(id<UIViewControllerContextTransitioning>)transitionContext ;
+
 @end

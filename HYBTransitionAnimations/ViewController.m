@@ -11,6 +11,7 @@
 #import "HYBModalBubbleTopRightViewController.h"
 #import "HYBModalHalfController.h"
 #import "HYBMoveViewController.h"
+#import "HYBEaseInOutController.h"
 
 #define kCellIdentifier @"GITHUB Name CoderJackyHuang"
 
@@ -45,6 +46,7 @@
                       [[HYBModalBubbleTopRightViewController alloc] initWithTitle:@"Bubble from top right"],
                       [[HYBModalHalfController alloc] initWithTitle:@"Modal present half"],
                       [[HYBMoveViewController alloc] initWithTitle:@"Move push/pop"],
+                      [[HYBEaseInOutController alloc] initWithTitle:@"Ease In Out"],
                       ];
   [self.collectionView reloadData];
   self.collectionView.backgroundColor = [UIColor whiteColor];

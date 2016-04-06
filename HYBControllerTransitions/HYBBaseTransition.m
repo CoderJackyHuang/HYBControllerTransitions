@@ -98,6 +98,8 @@
   } else if (operation == UINavigationControllerOperationPop) {
     self.transitionMode = kHYBTransitionPop;
     
+    toVC.navigationController.delegate = nil;
+    
     if (self.animationPopedCallback) {
       self.animationPopedCallback(fromVC, toVC, self);
     }
@@ -105,5 +107,40 @@
   
   return self;
 }
+
+- (UIView *)toView:(id<UIViewControllerContextTransitioning>)transitionContext {
+  UIView *toView = nil;
+
+  UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+  
+  if ([transitionContext respondsToSelector:@selector(viewForKey:)]) {
+    toView = [transitionContext viewForKey:UITransitionContextToViewKey];
+  } else {
+    toView = toVC.view;
+  }
+  
+  toView.frame = [transitionContext finalFrameForViewController:toVC];
+
+  return toView;
+}
+
+- (UIView *)fromView:(id<UIViewControllerContextTransitioning>)transitionContext {
+  
+  UIView *fromView = nil;
+  
+  UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+  
+  if ([transitionContext respondsToSelector:@selector(viewForKey:)]) {
+    fromView = [transitionContext viewForKey:UITransitionContextFromViewKey];
+  } else {
+    fromView = fromVC.view;
+  }
+  
+  fromView.frame = [transitionContext initialFrameForViewController:fromVC];
+  
+  return fromView;
+}
+
+
 
 @end

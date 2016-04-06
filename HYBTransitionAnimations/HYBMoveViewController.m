@@ -82,6 +82,8 @@ static NSString *cellIdentifier = @"gridcellidentifier";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+  id navigationDelegate = self.navigationController.delegate;
+  
   HYBMoveDetailController *vc = [[HYBMoveDetailController alloc] init];
   HYBGridModel *model = self.datasource[indexPath.item];
   vc.image = model.clipedImage;
@@ -94,6 +96,8 @@ static NSString *cellIdentifier = @"gridcellidentifier";
     move.animatedWithSpring = YES;
   } poped:^(UIViewController *fromVC, UIViewController *toVC, HYBBaseTransition *transition) {
     // Do nothing, unless you really need to.
+    // If you need to recode navigation controller delegate, you should add this.
+    toVC.navigationController.delegate = navigationDelegate;
   }];
   
   self.navigationController.delegate = self.transition;

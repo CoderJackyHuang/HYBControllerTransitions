@@ -36,8 +36,8 @@
   }
   
   if (self.transitionMode == kHYBTransitionPresent) {
-    UIView *fromView = [transitionContext viewForKey:UITransitionContextFromViewKey];
-    UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
+    UIView *fromView = [self fromView:transitionContext];
+    UIView *toView = [self toView:transitionContext];
     
     CGFloat height = self.presentedHeight;
     if ([self shouldUseDefaultHeight]) {
@@ -78,18 +78,18 @@
         toView.transform = CGAffineTransformMakeTranslation(0, -height);
         fromTempView.transform = CGAffineTransformMakeScale(self.scale.x, self.scale.y);
       } completion:^(BOOL finished) {
-        [transitionContext completeTransition:finished];
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
       }];
     } else {
       [UIView animateWithDuration:self.duration delay:0 usingSpringWithDamping:self.damp initialSpringVelocity:self.initialSpringVelocity options:UIViewAnimationOptionCurveEaseInOut animations:^{
         toView.transform = CGAffineTransformMakeTranslation(0, -height);
         fromTempView.transform = CGAffineTransformMakeScale(self.scale.x, self.scale.y);
       } completion:^(BOOL finished) {
-        [transitionContext completeTransition:finished];
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
       }];
     }
   } else if (self.transitionMode == kHYBTransitionDismiss) {
-    UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
+    UIView *toView = [self toView:transitionContext];
     
     UIView *fromTempView = [containerView.subviews firstObject];
     UIView *currentPresentingView = [containerView.subviews lastObject];
@@ -101,7 +101,8 @@
       } completion:^(BOOL finished) {
         toView.alpha = 1.0;
         [fromTempView removeFromSuperview];
-        [transitionContext completeTransition:finished];
+        
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
       }];
     } else {
       [UIView animateWithDuration:self.duration delay:0 usingSpringWithDamping:self.damp initialSpringVelocity:self.initialSpringVelocity options:UIViewAnimationOptionCurveEaseInOut animations:^{
@@ -110,7 +111,8 @@
       } completion:^(BOOL finished) {
         toView.alpha = 1.0;
         [fromTempView removeFromSuperview];
-        [transitionContext completeTransition:finished];
+
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
       }];
     }
   } else {

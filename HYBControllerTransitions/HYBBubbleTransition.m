@@ -34,7 +34,7 @@
   }
   
   if (self.transitionMode == kHYBTransitionPresent) {
-    UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
+    UIView *toView = [self toView:transitionContext];
     CGPoint toViewDestinationCenter = toView.center;
     CGSize toViewDestionationSize = toView.frame.size;
     
@@ -65,7 +65,7 @@
         toView.alpha = 1.0;
         toView.center = toViewDestinationCenter;
       } completion:^(BOOL finished) {
-        [transitionContext completeTransition:finished];
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
       }];
     } else {
       [UIView animateWithDuration:self.duration animations:^{
@@ -74,11 +74,11 @@
         toView.alpha = 1.0;
         toView.center = toViewDestinationCenter;
       } completion:^(BOOL finished) {
-        [transitionContext completeTransition:finished];
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
       }];
     }
   } else if (self.transitionMode == kHYBTransitionDismiss) {
-    UIView *fromView = [transitionContext viewForKey:UITransitionContextFromViewKey];
+    UIView *fromView = [self fromView:transitionContext];
     CGSize fromViewSize = fromView.frame.size;
     CGPoint fromViewCenter = fromView.center;
     
@@ -102,7 +102,7 @@
         [fromView removeFromSuperview];
         [self.bubbleView removeFromSuperview];
         
-        [transitionContext completeTransition:finished];
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
       }];
     } else {
       [UIView animateWithDuration:self.duration animations:^{
@@ -115,7 +115,7 @@
         [fromView removeFromSuperview];
         [self.bubbleView removeFromSuperview];
         
-        [transitionContext completeTransition:finished];
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
       }];
     }
   } else {

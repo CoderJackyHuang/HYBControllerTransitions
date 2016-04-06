@@ -24,7 +24,7 @@
   }
   
   if (self.transitionMode == kHYBTransitionPush) {
-    UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
+    UIView *toView = [self toView:transitionContext];
     UIView *tempView = [self.targetClickedView snapshotViewAfterScreenUpdates:NO];
     
     tempView.frame = [self.targetClickedView convertRect:self.targetClickedView.bounds
@@ -48,7 +48,7 @@
         tempView.alpha = 0.0;
        toVC.hyb_toTargetView.alpha = 1.0;
         
-        [transitionContext completeTransition:finished];
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
       }];
     } else {
       [UIView animateWithDuration:self.duration animations:^{
@@ -58,12 +58,12 @@
         tempView.alpha = 0.0;
         toVC.hyb_toTargetView.alpha = 1.0;
         
-        [transitionContext completeTransition:finished];
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
       }];
     }
   } else if (self.transitionMode == kHYBTransitionPop) {
-    UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
-    UIView *fromView = [transitionContext viewForKey:UITransitionContextFromViewKey];
+    UIView *toView = [self toView:transitionContext];
+    UIView *fromView = [self fromView:transitionContext];
     UIView *tempView = [containerView.subviews lastObject];
     
     toView.alpha = 1.0;
@@ -88,7 +88,7 @@
         [tempView removeFromSuperview];
         self.targetClickedView.alpha = 1.0;
         
-        [transitionContext completeTransition:finished];
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
       }];
     } else {
       [UIView animateWithDuration:self.duration animations:^{
@@ -99,7 +99,7 @@
         [tempView removeFromSuperview];
         self.targetClickedView.alpha = 1.0;
         
-        [transitionContext completeTransition:finished];
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
       }];
     }
   } else {

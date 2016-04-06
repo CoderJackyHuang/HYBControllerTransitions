@@ -24,6 +24,18 @@ Though Developers have no foudation of custom transition, they can use it direct
 All custom transition protocols have been wraped in the base transtion, you still can use
 it to add special effect. for this, just inherit from the HYBBaseTransition class.
 
+#Version Changes
+
+##Version 1.0.1
+
+* fix document
+
+##Version 1.1.0
+
+* fix a bug that it will be black when pushed to a controller and then go toHome, it means enter into background. Now I have set the navigation controller's delegate to nil when it was poped.
+
+
+
 #Support Spring Animation
 
 If you want to transition with Spring Animation, you can try this.
