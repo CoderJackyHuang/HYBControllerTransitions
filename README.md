@@ -26,13 +26,20 @@ it to add special effect. for this, just inherit from the HYBBaseTransition clas
 
 #Version Changes
 
-##Version 1.0.1
+##Version 1.2.0
 
-* fix document
+* Fix in ios7, it shows wrong in Lanscape.
+* Add ease in ease out transition animations for push/pop、present/dismiss
 
 ##Version 1.1.0
 
 * fix a bug that it will be black when pushed to a controller and then go toHome, it means enter into background. Now I have set the navigation controller's delegate to nil when it was poped.
+
+
+##Version 1.0.1
+
+* fix document
+
 
 
 
