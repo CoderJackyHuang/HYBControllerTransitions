@@ -3,7 +3,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/CoderJackyHuang/HYBControllerTransitions/blob/master/logo.png" style="text-align: center; margin: 0 auto;">
 
 
-#English Document  |  [中文文档](http://www.henishuo.com/transition-chinese-document/)
+# English Document  |  [中文文档](http://www.henishuo.com/transition-chinese-document/)
 
 A very helpful and an very useful library for controller custom transition.
 
@@ -14,7 +14,7 @@ library is, that developers only need to call an API, without others, to support
 custom transition. For more information, just see the document in detail  
 or just download the demo project to have a look.
 
-#Goal
+# Goal
 
 I design this library with a goal that any developer can use it directly without any knowledge   
 about custom transition. For this, I try to make it as easy as it can. Almost all properties  
@@ -24,26 +24,26 @@ Though Developers have no foudation of custom transition, they can use it direct
 All custom transition protocols have been wraped in the base transtion, you still can use
 it to add special effect. for this, just inherit from the HYBBaseTransition class.
 
-#Version Changes
+# Version Changes
 
-##Version 1.2.0
+## Version 1.2.0
 
 * Fix in ios7, it shows wrong in Lanscape.
 * Add ease in ease out transition animations for push/pop、present/dismiss
 
-##Version 1.1.0
+## Version 1.1.0
 
 * fix a bug that it will be black when pushed to a controller and then go toHome, it means enter into background. Now I have set the navigation controller's delegate to nil when it was poped.
 
 
-##Version 1.0.1
+## Version 1.0.1
 
 * fix document
 
 
 
 
-#Support Spring Animation
+# Support Spring Animation
 
 If you want to transition with Spring Animation, you can try this.
 
@@ -74,7 +74,7 @@ You can specify damp, initialSpringVerlocity, they have default values.
 
 
 
-#Buble Effect Transition
+# Buble Effect Transition
 
 A custom modal transition that presents and dismiss a controller with an expanding bubble effect.  
 The bubble transition only supports present and dismiis mode.
@@ -125,7 +125,7 @@ you don't need to do anything. It is easy?
 For more information, you should see the properties provided, almost every property has default value.  
 So at many times, you don't need to worry about how to use.
 
-#Modal Effect Transition
+# Modal Effect Transition
 
 Modal transition animation, it will show usually half for the destination view controller's view,  
 and scale the from view.
@@ -174,7 +174,7 @@ For example, AController has an event onPresent, when it is clicked, it will be 
 Now, AController needs to present BController, just use the code like above. In BController,  
 you don't need to do anything. It is easy?
 
-##Snapshot support navigation bar or not
+## Snapshot support navigation bar or not
 
 When the presenting view controller has navigation bar, you should set it to YES, and default is YES.
 
@@ -186,7 +186,7 @@ When the presenting view controller has navigation bar, you should set it to YES
 @property (nonatomic, assign) BOOL scapshotIncludingNavigationBar;
 ```
 
-##Support tap to dismiss automatically
+## Support tap to dismiss automatically
 
 If you don't want it to dismiss automatically, just set it to NO.  
 The default value is YES.
@@ -203,7 +203,7 @@ The default value is YES.
 For more information, you should see the properties provided, almost every property has default value.  
 So at many times, you don't need to worry about how to use.
 
-#Move Push/Pop Transition
+# Move Push/Pop Transition
 
 The move transition animation, it looks like the transition animation of KeyNote move transition.  
 When click a cell or a subview, then push to a view controller and you need  animation from the   
@@ -251,7 +251,7 @@ Here the example is that, when select a cell, transition from the cell's imagevi
 
 Ok, until now, do you think it is really easy? I believe so!
 
-#How to install
+# How to install
 
 If your project supports Pod, just add the following code to you Podfile:
 
@@ -262,17 +262,17 @@ pod 'HYBControllerTransitions', '~> 1.0.0'
 Otherwise, just add the source code HYBControllerTransitions folder to your project.
 
 
-#Thanks
+# Thanks
 
 Thanks to [andreamazz](https://github.com/andreamazz), I learn a lot from him.
 
-#Contact
+# Contact
 
 * GITHUB           : https://github.com/CoderJackyHuang/
 * Author Blog      : http://www.henishuo.com/
 * Email            : huangyibiao520@163.com
 
-#MIT LICENSE
+# MIT LICENSE
 
 Copyright (c) 2016 CoderJackyHuang. All rights reserved.
 
